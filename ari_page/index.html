@@ -72,10 +72,10 @@
             "email": "contacto@gestorlexmx.com",
             "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "Calle Efraín González Luna 2487, Interior 1, Col Americana, Arcos",
+                "streetAddress": "Av. Faro 2513, Bosques de La Victoria",
                 "addressLocality": "Guadalajara",
                 "addressRegion": "Jalisco",
-                "postalCode": "44130",
+                "postalCode": "44538",
                 "addressCountry": "MX"
             },
             "url": "https://gestorlexmx.com/"
@@ -89,12 +89,12 @@
          $watch('darkMode', value => localStorage.setItem('darkMode', JSON.stringify(value)))"
   :class="{'b eh': darkMode === true}">
   <!-- ===== Header Start ===== -->
-  <header class="g s r vd ya cj" :class="{ 'hh sm _k dj bl ll' : stickyMenu }"
+  <header class="g s r vd ya cj py-3 bg-white/95 dark:bg-[#181c31]/95 backdrop-blur-sm border-b border-black/5 dark:border-white/10" :class="{ 'hh sm _k dj bl ll' : stickyMenu }"
     @scroll.window="stickyMenu = (window.pageYOffset > 20) ? true : false">
     <div class="bb ze ki xn 2xl:ud-px-0 oo wf yf i">
       <div class="flex items-center justify-start shrink-0 mr-4 pl-0">
           <a href="index.html" class="block">
-              <img src="images/Gestorlex-Logo-03.png" alt="Gestorlex MX" class="h-14 md:h-24 w-auto object-contain" />
+              <img src="images/Gestorlex-Logo-03.png" alt="Gestorlex MX" class="h-9 md:h-11 w-auto object-contain" />
           </a>
 
         <!-- Hamburger Toggle BTN -->
@@ -119,6 +119,8 @@
           <ul class="tc _o sf yo cg ep">
             <li><a href="index.html" class="xl" :class="{ 'mk': page === 'home' }">Inicio</a></li>
             <li><a href="index.html#features" class="xl">Nosotros</a></li>
+            <li><a href="index.html#servicios" class="xl">Servicios</a></li>
+            <li><a href="blog.html" class="xl" :class="{ 'mk': page === 'blog' }">Blog</a></li>
             <!--
             <li class="c i" x-data="{ dropdown: false }">
               <a href="#!" class="xl tc wf yf bg" @click.prevent="dropdown = !dropdown"
@@ -180,6 +182,11 @@
       <div class="bb ze ki xn 2xl:ud-px-0">
         <div class="tc _o">
           <div class="animate_left jn/2">
+            <a href="amparo-suspension-linea-telefonica.html"
+               class="flex w-fit max-w-full items-center gap-2 bg-[#e45b00]/10 border border-[#e45b00]/30 text-[#e45b00] px-4 py-2 rounded-lg text-sm font-semibold mb-5 hover:bg-[#e45b00]/20 transition-colors whitespace-normal">
+              <span aria-hidden="true" class="shrink-0">📵</span>
+              <span>¿Te suspendieron la línea por falta de vinculación? →</span>
+            </a>
             <h1 class="fk vj zp or kk wm wb"><span style="color: #00619d;">Nos especializamos en gestionar tus trámites administrativos de forma rápida, segura y sin complicaciones.</span></h1>
             <!--
             <p class="fq">
@@ -286,7 +293,7 @@
     <!-- ===== About End ===== -->
 
     <!-- ===== Services Start ===== -->
-    <section class="lj tp kr">
+    <section id="servicios" class="lj tp kr">
       <!-- Section Title Start -->
       <div
               x-data="{
@@ -326,6 +333,7 @@
               <li>Renovación de licencia municipal</li>
               <li>Licencia de anuncios</li>
             </ul>
+            <a href="licencias-municipales-guadalajara-zapopan.html" class="mt-3 inline-block font-semibold succes-orange hover:underline">Ver detalles →</a>
           </div>
 
           <!-- Service Item -->
@@ -344,6 +352,7 @@
               <li>Copias simples o certificadas de escrituras</li>
               <li>Historial mercantil de empresas</li>
             </ul>
+            <a href="registro-publico-comercio-jalisco.html" class="mt-3 inline-block font-semibold succes-orange hover:underline">Ver detalles →</a>
           </div>
 
           <!-- Service Item -->
@@ -364,6 +373,7 @@
               <li>Asignación de número oficial</li>
               <li>Permiso de obras menores</li>
             </ul>
+            <a href="tramites-administrativos-uso-de-suelo.html" class="mt-3 inline-block font-semibold succes-orange hover:underline">Ver detalles →</a>
           </div>
 
           <!-- Service Item -->
@@ -420,6 +430,7 @@
                 (Federal, Estatal, Municipal)
               </li>
             </ul>
+            <a href="asesoria-legal-empresas-guadalajara.html" class="mt-3 inline-block font-semibold succes-orange hover:underline">Ver detalles →</a>
           </div>
         </div>
       </div>
@@ -572,12 +583,12 @@
                   scrolling="no" 
                   marginheight="0" 
                   marginwidth="0" 
-                  src="https://maps.google.com/maps?q=Gestorlex+Mx+Guadalajara&t=&z=15&ie=UTF8&iwloc=&output=embed">
+                  src="https://maps.google.com/maps?q=Av+Faro+2513+Bosques+de+la+Victoria+Guadalajara&t=&z=15&ie=UTF8&iwloc=&output=embed">
                 </iframe>
               </div>
               <p class="mt-2 text-sm">
-                <a href="https://www.google.com/maps/search/?api=1&query=Calle+Efraín+González+Luna+2487,+Col+Americana,+Arcos,+44130+Guadalajara,+Jal" target="_blank" class="hover:text-blue-500 transition-colors">
-                  Calle Efraín González Luna 2487, Interior 1, Col Americana, Arcos, 44130 Guadalajara, Jal.
+                <a href="https://www.google.com/maps/search/?api=1&query=Av+Faro+2513,+Bosques+de+la+Victoria,+44538+Guadalajara,+Jal" target="_blank" class="hover:text-blue-500 transition-colors">
+                  Av. Faro 2513, Bosques de La Victoria, 44538 Guadalajara, Jal.
                 </a>
               </p>
             </div>
@@ -806,6 +817,7 @@
                           <ul>
                               <li><a href="index.html" class="sc xl vb">Inicio</a></li>
                               <li><a href="index.html#features" class="sc xl vb">Nosotros</a></li>
+                              <li><a href="blog.html" class="sc xl vb">Blog</a></li>
                               <li><a href="index.html#support" class="sc xl vb">Contacto</a></li>
                           </ul>
                       </div>
@@ -813,10 +825,10 @@
                       <div class="animate_top">
                           <h4 class="kk wm tj ec">Trámites</h4>
                           <ul>
-                              <li><a href="#!" class="sc xl vb">Licencias Municipales</a></li>
-                              <li><a href="#!" class="sc xl vb">Registro Público</a></li>
-                              <li><a href="#!" class="sc xl vb">Obras Públicas</a></li>
-                              <li><a href="#!" class="sc xl vb">Registro Civil</a></li>
+                              <li><a href="licencias-municipales-guadalajara-zapopan.html" class="sc xl vb">Licencias Municipales</a></li>
+                              <li><a href="registro-publico-comercio-jalisco.html" class="sc xl vb">Registro Público</a></li>
+                              <li><a href="tramites-administrativos-uso-de-suelo.html" class="sc xl vb">Uso de Suelo y Trámites</a></li>
+                              <li><a href="asesoria-legal-empresas-guadalajara.html" class="sc xl vb">Asesoría Legal</a></li>
                           </ul>
                       </div>
 
